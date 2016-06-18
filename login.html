@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Farmeurs Chinoirs</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<div id="header" class="topmain">
+    <table><tr>
+  <td><a href="index.php" title="Page d'accueil">
+        <img src="images/home.png" alt="Mountain View" style="width:50px;height:50px">
+    </a></td>
+  <td><div class="log"><h2><br><?php session_start(); echo 'Bonjour '.$_SESSION['name'];?></h2></div></td>
+    <td><form method="POST" action="data_manip.php target" target="mainframe">
+        <input type="text" name="recherche" value="">
+        <input type="submit" name="submit" value="Recherche">
+    </form></td>
+    </tr></table>
+</div>
+<!--*****************************************************************************************************-->
+<div id="leftcol_container" class="leftcolgclass">
+  <div class="leftcol">
+    <h2>Nos MMORPG</h2>
+    <ul>
+        <li><a href="wow.php">World of Warcraft</a></li>
+    </ul>
+    <p>&nbsp;</p>
+</div>
+<div class="leftcol_bottom"></div>
+<div class="leftcol">
+  <h2>Nos RTS</h2>
+  <ul>
+    <li><a href="st2.php">Starcraft 2</a></li>
+</ul>
+<p>&nbsp;</p>
+</div>
+<div class="leftcol_bottom"></div>
+<div class="leftcol">
+    <h2>Nos Hack & Slash</h2>
+      <ul>
+        <li><a href="d3.php">Diablo 3</a></li>
+    </ul>
+    <p>&nbsp;</p>
+</div>
+<div class="leftcol_bottom"></div>
+<div class="leftcol_bottom"></div>
+<div class="leftcol_bottom"><a href="https://www.sos-amitie.com/">Nous Contacter</a></div>
+</div>
+<!--*****************************************************************************************************-->
+<div id="main">
+    <div id="maincol_container">
+        <div class="maincol">
+                <h1 style="text-size:">Black Market Farming</h1>
+        </div>
+        <div class="maincol">
+
+          <table style="width:100%">
+            <tr>
+              <td>
+                <form action="auth.php" method="POST">
+                  Login<br>
+                  Identifiant: <input type="text" name="login" value="">
+                  <br />
+                  Mot de passe: <input type="password" name="passwd" value="">
+                  <input type="submit" name="submit" value="OK">
+                </form>
+              </td>
+              <td></td>
+              <td>
+                <form action="create.php" method="POST">
+                  Register<br>
+                  Identifiant: <input type="text" name="login" value="">
+                  <br />
+                  Mot de passe: <input type="password" name="passwd" value="">
+                  <input type="submit" name="submit" value="register">
+                </form>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="maincol_bottom"></div>
+        <div class="maincol_bottom">
+          <div id="footer"><h3>&copy;
+            <a href="https://profile.intra.42.fr/users/fcarre">fcarre</a>
+            <a href="https://profile.intra.42.fr/users/"></a> 2014</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!--*****************************************************************************************************-->
+<!--*****************************************************************************************************-->
+</body></html>
